@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>AI Poem Generator</title>
 
@@ -15,7 +16,7 @@
 
     </header>
     <main>
-        <form>
+        <form id="poem-generator-form">
             <input type="Text" placeholder="Enter the topic of the french poems"
              autofocus
              required
@@ -24,10 +25,8 @@
              />
             <input type="Submit" class="submit-button"/>
         </form>
-        <div class="poem">
-        Je marcherai les yeux fixés sur mes pensées,
-        <br />
-        Sans rien voir au dehors, sans entendre aucun bruit,
+        <div class="poem" id="poem">
+        
         </div>
 
 
