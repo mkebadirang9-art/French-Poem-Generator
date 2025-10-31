@@ -1,4 +1,4 @@
-function generatrePoem(event){
+function generatePoem(event){
  event.preventDefault();
 
  new Typewriter("#poem", {
@@ -10,5 +10,5 @@ function generatrePoem(event){
 
 }
 
-let poemFormElement = document.querySelector("poem-generator-form");
-poemFormElement.addEventListener("submit",generatrePoem);
+let poemFormElement = document.querySelector("#poem-generator-form");
+poemFormElement.addEventListener("submit",generatePoem);
