@@ -12,12 +12,17 @@ new Typewriter("#poem", {
 
 function generatePoem(event){
  event.preventDefault();
-let instructionInput = document.querySelector("#user-instructions")
+let instructionsInput = document.querySelector("#user-instructions")
  let apiKey = "2ab140051tc6a33060fa9bfdb4fbcocf";
 let context =
            "You are a romantic poem expert and love to write short poems.your mission is to generate four line poem in basic HTML and separate each line with <br /> . make sure you follow user instructions";
- let prompt =`user instructions:Generate french poems about ${instructionInput.value}`;
+ let prompt =`user instructions:Generate french poems about ${instructionsInput.value}`;
 let apiUrl =`https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+let poemElement = document.querySelector("#poem");
+poemElement.classList.remove("hidden");
+poemElement.innerHTML =`Generating a french poem about ${instructionsInput.value}`
+
 
 console.log("Generating poem");
 console.log(`prompt :${prompt}`);

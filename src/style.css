@@ -22,15 +22,25 @@ h1{
     line-height: 1.5;
     color: #272844;
 }
-
-
-form{
-    padding: 30px;
+.form-container{
+    padding: 15px 20px;
     background-color: white;
     box-shadow: 6px 20px 68px rgbs(65,50,100,0.08);
     border-radius: 10px;
-    display: flex;
     margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+}
+
+.hint{
+    line-height: 1.5;
+    margin-top: 5px;
+    opacity: 0.6;
+    font-size: 12px;
+
+
 }
 .instructions{
     padding: 10px;
@@ -59,6 +69,9 @@ form{
     border-left: 3px solid #885df1;
      box-shadow: 6px 20px 68px rgbs(39, 33, 66, 0.03);      
 
+}
+.hidden{
+    display: none;
 }
 
 footer{
